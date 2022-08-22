@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    color: aliceblue;
+}
+.cover{
+background-image: url(https://taleek.com/img/bg-layer.svg);
+height: 800px;
+background-size: cover;
+background-repeat: no-repeat;
+background-color: brown;
+position: relative;
+}
+
+
+
+header{
+height: 200px;
+display: flex;
+
+}
+
+.middle{
+height: 400px;
+position: relative;
+}
+
+.wave{
+height: 200px;;
+}
+.logo,nav{
+height: 100px;
+
+width: 40%;
+margin-top: 20px;
+}
+nav{
+margin-top: 30px;
+margin-left: 400px;
+
+}
+.logo{
+    margin-left: 50px;
+}
+
+p{
+display: inline-block;
+position: relative;
+bottom: 20px;
+}
+a{
+
+text-decoration: none;
+margin: 30px 10px;
+opacity: 0.5;
+font-size: 20px;
+}
+a:hover{
+opacity: 1;
+transition: all 0.3s;
+}
+.left{
+
+
+height: 100px;
+width: 100px;
+position: absolute;
+top: 35%;
+left: 15%;
+}
+.imgg{
+
+margin: auto;
+display: block;
+animation: image 10s infinite
+}
+.app{
+width: 135px;
+border-radius: 10px;
+}
+
+input{
+all: unset;
+border-radius: 12px;
+padding: 10px 15px;
+display: block;
+margin: 20px 0;
+cursor: pointer;
+background-color: goldenrod;
+font-size: 25px;
+transition: all 0.3s;
+animation: buttonani 10s infinite;
+
+}
+input:hover{
+font-size: 20px;
+padding: 5px 10px;
+
+}
+
+@media (max-width:900px){
+.left{
+    position: static;
+    text-align: center;
+}
+input{
+    margin-left: auto;
+    margin-right:auto ;
+    
+}
+}
+
+.wave{
+width: 100%;
+height: 150px;
+position: absolute;
+bottom: 0;
+background-image: url(images/wave.png);
+animation: wave 20s infinite;
+background-size: cover;
+}
+
+@keyframes wave{
+0%{background-position: 1000px;}
+50%{background-position: 100px;}
+100%{background-position: 1000px;}
+}
+
+@keyframes letter{
+0%,100%{letter-spacing: 5px;}
+50%{letter-spacing: 15px;}
+}
+
+h1{
+letter-spacing: 17px;
+animation: letter 10s infinite linear;
+}
+
+
+
+@keyframes buttonani {
+0%,
+100% {
+border-radius: 15px;
+}
+
+50% {
+border-radius: 5px;
+}
+}
+
+
+
+@keyframes image {
+50% {
+transform: translateX(50px);
+}
+}
